@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/ex04/zipcode_20130201(1).csv</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/%EC%9A%B0%ED%8E%B8%EB%B2%88%ED%98%B8/old/zipcode_20130201(1).csv</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

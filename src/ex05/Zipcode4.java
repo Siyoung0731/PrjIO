@@ -15,12 +15,10 @@ public class Zipcode4 {
 		System.out.println("검색할 시도를 입력하세요(부산, 대구, 경남)");
 		String sidos = sc.nextLine(); // 부산, 대구, 경남
 		String[] sis = sidos.trim().split(",");
-		String [] sidoList = new String[sis.length];
 		int [] ctr = new int[sis.length];
 		
-		for (int i = 0; i < sidoList.length; i++) {
+		for (int i = 0; i < sis.length; i++) {
 			sis[i] = sis[i].trim();
-			sidoList[i] = sis[i];
 			ctr[i] = 0;
 		}
 

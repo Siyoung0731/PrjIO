@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class TestZipCode {
 	public static void main(String[] args) throws IOException {
 		String path = "D:/dev/우편번호/old/";
-		String fname = "zipcode_20130201(1).csv";
+		String fname = "zipcode_utf8.csv";
 		
 		FileReader fr = new FileReader(path + fname);
 		BufferedReader br = new BufferedReader(fr);
@@ -18,6 +18,10 @@ public class TestZipCode {
 		String fname2 = "zipcode.txt";
 		FileWriter fw = new FileWriter(path + fname2);
 		BufferedWriter bw = new BufferedWriter(fw);
+		
+		String title = "ZIPCODE,SIDO,GUGUN,DONG,BUNJI,SEQ";
+		System.out.println(title);
+		bw.write(title);
 		
 		String line = "";
 		br.readLine();
@@ -31,10 +35,12 @@ public class TestZipCode {
 			String bunji = li[4].trim();
 			String seq = li[5].trim();
 	 
-			String fmt = "%s %s %s %s %s %s";
+			String fmt = "%s %s %s %s %s %s\n";
 			String msg = String.format(fmt, zipcode, sido, gugun, dong,
 					bunji, seq);
+			System.out.println(msg);
 			bw.write(msg);
+				
 		} 
 		
 		br.close();

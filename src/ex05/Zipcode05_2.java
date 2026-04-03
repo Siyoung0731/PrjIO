@@ -7,30 +7,23 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 //ZIPCODE,SIDO,GUGUN,DONG,BUNJI,SEQ
-
 //1. 전국의 롯데백화점의 갯수 출력
 //2. (읍면동 건물명: 입력 받아 출력
-
 //3. 부산, 울산, 대구 우편번호
 //	부산:3605
 //	대구:820
 //	울산:2782
-
 //	5. 한국의 시도명 우편번호 출력 - 17건 
 //	   서울 8080
 //	   부산 3605
 //	   ... 
 //	   충북
-
 //Post class 확인
 //zipcode_utf8.csv 읽어서
 //시도별 우편번호(주소) 갯수를 출력
 //Fields
-
 //6. 부산의 부전2동 우편번호만 화면 출력
-
 //7. 부산 부산진구의 우편번호를 파일( .csv )로 출력
-
 //8. 	 zipcode_utf8.csv
 //	   -> 서울.csv
 //	      부산.csv
